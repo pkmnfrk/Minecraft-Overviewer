@@ -3169,3 +3169,5 @@ block(blockid=123, top_index=211)
 
 # active redstone lamp
 block(blockid=124, top_index=212)
+
+block(blockid=254, top_index=1)

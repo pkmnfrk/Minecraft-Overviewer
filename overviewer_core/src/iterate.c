@@ -586,6 +586,9 @@ chunk_render(PyObject *self, PyObject *args) {
                 if ((t == NULL || t == Py_None) && ancilData != 0)
                     t = PyList_GET_ITEM(blockmap, max_data * state.block);
                 
+				if(t == NULL || t == Py_None)
+					t = PyList_GET_ITEM(blockmap, max_data * 1);
+				
                 /* if we found a proper texture, render it! */
                 if (t != NULL && t != Py_None)
                 {
